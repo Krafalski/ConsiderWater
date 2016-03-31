@@ -4,7 +4,7 @@
 #### About
  This is a project aimed at creating a web app that would provide an interactive experience with the goal of helping pass the time for users who are feeling anxious.
 
- The name is inspired by David Foster Wallace's commencement speech to the Kenyon College in 2005: This Is Water. 
+ The name is inspired by David Foster Wallace's commencement speech to the Kenyon College in 2005: This Is Water.
 
 
 #### Description
@@ -30,3 +30,6 @@
 
 #### URL
  tbd
+
+###### Goal (from original ideas notes)
+To create an interactive web site to provide simple activities for anxious people to do. 
