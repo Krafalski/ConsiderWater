@@ -15,6 +15,7 @@
 - Create this schedule
 - Create ERDs
 - Create github repository
+- Add github issues
 - Rails?
 - Should have a server and database set up today
 
