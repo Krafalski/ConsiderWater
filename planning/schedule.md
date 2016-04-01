@@ -24,6 +24,10 @@
 - delve further into wireframes/colors etc.
 - set up routes and overall layout/nav of site with stubs
 - start on user stuff✅, journal stuff
+- create form for journal
+- create view of all journal entries
+- start the rest of the CRUD part of the journal entries
+- wireframes of journal and welcome page and overall layout
 
 ###### Saturday April 2, 2016
 - have journal working (CRUD)

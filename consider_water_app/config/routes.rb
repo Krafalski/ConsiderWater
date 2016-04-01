@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   resources :mood_ratings#, only:[:create, :show, :index]
 
 
-
-#uncomment when ready for sessions
 get 'sessions/new' => 'sessions#new'
 post 'sessions' => 'sessions#create'
 delete 'sessions' => 'sessions#destroy'
