@@ -32,9 +32,9 @@ class JournalEntriesController < ApplicationController
     @journal_entry.destroy
     redirect_to root_path
   end
-
+private
   def journal_entry_params
-    params require(:entry_main).permit(:entry_title)
+    params.require(:journal_entry).permit(:entry_title, :entry_main)
   end
-  
+
 end
