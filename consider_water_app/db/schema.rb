@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160331202443) do
+ActiveRecord::Schema.define(version: 20160401005040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "journal_entries", force: :cascade do |t|
+    t.text     "entry_title"
+    t.text     "entry_main"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "user_id"
+  end
+
+  create_table "mood_ratings", force: :cascade do |t|
+    t.float    "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -22,4 +37,6 @@ ActiveRecord::Schema.define(version: 20160331202443) do
     t.string "email"
   end
 
+  add_foreign_key "journal_entries", "users"
+  add_foreign_key "mood_ratings", "users"
 end
