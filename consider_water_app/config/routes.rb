@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :users, only:[:new, :create, :show, :destroy]
   resources :journal_entries
-  resources :mood_ratings, only:[:create, :show]
+  resources :mood_ratings#, only:[:create, :show, :index]
 
 
 
