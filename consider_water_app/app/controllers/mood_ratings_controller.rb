@@ -14,7 +14,7 @@ class MoodRatingsController < ApplicationController
 
   def create
     @mood_rating = MoodRating.create(mood_rating_params)
-    #redirect_to ?
+    redirect_to mood_ratings_path
   end
 #don't know if I want to keep this function
   def edit

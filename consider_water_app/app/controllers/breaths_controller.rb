@@ -1,0 +1,2 @@
+class BreathsController < ApplicationController
+end

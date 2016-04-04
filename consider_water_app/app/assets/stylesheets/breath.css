@@ -1,0 +1,31 @@
+.breath {
+
+  position: absolute;
+  left: 400px;
+  top:200px;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:200px;
+  min-height:200px;
+  box-shadow: 3px 3px 8px rgba(119, 119, 119, .3),
+           -3px -3px 8px  rgba(119, 119, 119, .3),
+            -3px 3px 8px rgba(119, 119, 119, .3),
+             3px -3px 8px rgba(119, 119, 119, .3);
+  /*box-shadow: ;*/
+}
+
+.breath {
+  animation-duration:12s;
+  animation-name:circleExpand;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}

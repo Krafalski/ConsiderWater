@@ -3,5 +3,6 @@
   <%= f.text_field :entry_title %>
   <%= f.label :entry_main %>
   <%= f.text_field :entry_main %>
-  <%= f.submit %>
+  <%= f.hidden_field :user_id, :value => :user_id %>
+  <%= f.submit "save" %>
 <% end %>

@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   resources :users, only:[:new, :create, :show, :destroy]
   resources :journal_entries
-  resources :mood_ratings#, only:[:create, :show, :index]
+  resources :mood_ratings
+  resources :breaths, only:[:index]
+  resources :esques, only:[:index]
+  resources :colors, only:[:index]
 
 
 get 'sessions/new' => 'sessions#new'
