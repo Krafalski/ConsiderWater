@@ -9,7 +9,7 @@ class MoodRatingsController < ApplicationController
   end
 
   def new
-    @mood_rating = MoodRating.create(mood_rating_params)
+    @mood_rating = MoodRating.new
   end
 
   def create
@@ -21,11 +21,13 @@ class MoodRatingsController < ApplicationController
     @mood_rating = MoodRating.find(params[:id])
   end
 
+###hiting the update instead of create,
   def update
     @mood_rating = MoodRating.find(params[:id])
     @mood_rating.update(mood_rating_params)
-    #redirect_to ?
+    redirect_to mood_ratings_path
   end
+
 #don't know if I want to keep this function
   def destroy
     @mood_rating = MoodRating.find(params[:id])
@@ -33,7 +35,9 @@ class MoodRatingsController < ApplicationController
     #redirect_to ?
   end
 
+private
   def mood_rating_params
-    params.require(:mood_rating).permit(:rating, :user, :id)
+ params.require(:mood_rating).permit(:rating, :user , :id)
   end
+
 end

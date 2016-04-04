@@ -19,3 +19,15 @@
 - any user can see all the journal entries
 
 - user id not being added to journal entries
+
+- authenticate in UsersController not working - commented out lets user see 'profile page'/destroy account page
+
+- a user that is not logged in gets a 'cannot find id=0' when trying to user journals. Should just be blocked/throw an error to log in
+
+- remove the box shadow on the mood bar once that is worked out
+
+-turbolinks and jquery don't always play nice - need to fix it so that after clicking through the site a few times, jquery is still functioning
+
+-css - SO much css needed to make it not be terrible/make it look like something.
+
+- change the field sizes and shapes to make sense in the journal forms

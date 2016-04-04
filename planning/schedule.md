@@ -33,15 +33,18 @@
 - have journal working (CRUD)
 - be able to create a user (and delete a user)✅(did this on Friday)
 - have user login/logout/sessions working✅(did this on Friday)
-- make sure journal is tied to user
-- have mood ranking started
+- make sure journal is tied to user (still working on it)
+- have mood ranking started (issues in getting things to work with rails)
 
 
 ###### Sunday April 3, 2016
+- work on seeing only logged in user's journal and then only logged in user posting to own journal (...need to add user id to journal when creating) -took me all day/weekend ...oooofffff
 - redo the readme
 - rethink the name of this app
+- rethink the name of all the components
 
 ###### Monday April 4, 2016
+- ??? try to talk to instructors about project...is it ok? it seems kind of weird, simple, a mess?
 
 ###### Tuesday April 5, 2016
 

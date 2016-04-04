@@ -25,12 +25,10 @@ class JournalEntriesController < ApplicationController
 
 
   def edit
-    #@user = User.all
     @journal_entry = JournalEntry.find(params[:id])
   end
 
   def update
-    # @user = User.find(params[:id])
     @journal_entry = JournalEntry.find(params[:id])
     @journal_entry.update(journal_entry_params)
     redirect_to journal_entries_path

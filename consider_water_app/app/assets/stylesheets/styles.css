@@ -54,12 +54,13 @@ a:hover {
                 Mood Bar
 *****************************************************/
 div[class^="mood"]{
-  width:20px;
-  height:40px;
+  width:40px;
+  height:44px;
   color: rgba(200,200,200, 0.01);
-  display:inline;
+  display:inline-block;
   padding:0;
   margin:0;
+  box-shadow:  1px 1px 1px black;
 
 }
 
@@ -88,6 +89,16 @@ input[class^="mood"]{
   margin: 10px;
   box-shadow: 1px 1px 3px grey;
 }
+
+
+/*****************************************************
+                Colors
+*****************************************************/
+
+.colors{
+  color: rbga(210,210,210,.1);
+}
+
 /*
 fonts
 
