@@ -34,6 +34,6 @@ class MoodRatingsController < ApplicationController
   end
 
   def mood_rating_params
-    params.require(:rating)
+    params.require(:mood_rating).permit(:rating, :user, :id)
   end
 end
