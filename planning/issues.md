@@ -31,3 +31,7 @@
 -css - SO much css needed to make it not be terrible/make it look like something.
 
 - change the field sizes and shapes to make sense in the journal forms
+
+- add a dependent destroy to users has many...
+
+- updated journal entry out of chronological order?

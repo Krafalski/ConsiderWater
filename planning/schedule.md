@@ -47,6 +47,12 @@
 - ??? try to talk to instructors about project...is it ok? it seems kind of weird, simple, a mess?
 
 ###### Tuesday April 5, 2016
+- got db stuf with mood ratings
+- try to work on making the mood bar functional
+- look into D3
+- look into chartkick
+- see if one or the other would work for data viz. or trash this idea
+- talk to people and figure out what I should be working on...so lost and confused.  
 
 ###### Wednesday April 6, 2016
 
