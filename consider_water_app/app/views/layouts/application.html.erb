@@ -14,8 +14,10 @@
     Menu
   </div>
   <div class="menu">
-    <%= link_to "Journal", journal_entries_path %>
-    <%= link_to "Mood", mood_ratings_path %>
+    <% if session[:current_user_id] %>
+      <%= link_to "Journal", user_journal_entries_path(@user) %>
+      <%= link_to "Mood", user_mood_ratings_path(@user) %>
+    <% end %>
     <%= link_to "Breath", breaths_path %>
     <%= link_to "esque", esques_path %>
     <%= link_to "Colors", colors_path %>

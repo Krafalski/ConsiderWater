@@ -1,6 +1,6 @@
 journal entries edit!
 
 <div class ="form">
-  <%= render partial: 'form' %> <br>
-  <%= link_to "delete", journal_entry_path(@journal_entry), method: :delete %>
+  <%= render partial: 'edit_form' %> <br>
+  <%= link_to "delete", user_journal_entry_path(@user, @journal_entry), method: :delete %>
 </div>
