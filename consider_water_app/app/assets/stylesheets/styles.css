@@ -2,6 +2,15 @@
                  GENERAL
 *****************************************************/
 
+.testbutton{
+  background-color:inherit;
+  border: none;
+  outline: none;
+}
+.testbutton:active{
+  outline:none;
+  background-color: orange;
+}
 
 body {
   background: url(crossword.png);
