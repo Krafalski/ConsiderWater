@@ -1,7 +1,7 @@
 class MoodRatingsController < ApplicationController
 
   def index
-    @mood_ratings = MoodRating.all
+    @mood_ratings = User.find(session[:current_user_id]).mood_ratings
   end
 
   def show
@@ -10,11 +10,17 @@ class MoodRatingsController < ApplicationController
 
   def new
     @mood_rating = MoodRating.new
+    @users = User.all
   end
 
   def create
-    @mood_rating = MoodRating.create(mood_rating_params)
+    @mood_rating = User.find(session[:current_user_id]).mood_ratings.build(mood_rating_params)
     redirect_to mood_ratings_path
+    if @mood_rating.save
+      #redirect_to mood_ratings_path(@mood_rating)
+    else
+      # some sort of error message?
+    end
   end
 #don't know if I want to keep this function
   def edit
