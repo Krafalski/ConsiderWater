@@ -1,0 +1,40 @@
+The goal of my app is to help anxious people pass the time.
+
+- Currently, I a having serious issues with the nested routes/rebuilding the routes. And am panicking. But if this gets straightened out by Thursday morning - it should be ok. I do have another branch that has the routes not nested that I could return to if absolutely necessary.
+
+- Initially, I wanted to create a journal that people could write, update, delete and view. Success!
+
+- There is login, log-out, sign up functionality. This allows users to only see their journal entires and only write to their journal entries. I have no plans to implement a friending/sharing feature for this app.
+
+- Then giving people the option to rate their mood on a scale of 1-10 that they could see a visualization of their mood over time. This has input, a create and view function. But the input is a form and not on a mood bar. The visualization is just a list of divs. It would be nicer if it were in graph form.
+
+- Colors is almost complete. It just needs css/style/formatting. This is a simple view that instructs the user to stop looking at the computer and connect with their environment in the here and now. I know this sounds like a total cop-out of a feature. BUT I actually use this technique ALL the time and felt it is important to implement. I am confident that I can style to a satisfactory point in less than an hour and I complete this feature.
+
+- The next component was a ten breaths visualization. I have a visualization. It needs polishing. I also want to be able to give the user to be able to speed it up and slow it down. This could probably be done by creating a few animation classes and then changing the class of the visualization using jQuery.  I feel confident that if I finish working out my routes issues that I can do this.
+
+- Esque - (based on EMDR) a terrible name for an animation that is like a pendulum- which is to help with bilateral stimulation while a user goes through some prompts. I still need to create some prompts and work out how they will show up an look. I feel confident that with a few hours of work this will be satisfactorily completed enough for the final project.
+
+- Links and references. I used a lot of online references. It would be nice to compile a static page of links and add it to the menu. I am confident I can work on this a little bit at a time as I encounter useful link sand incorporate it. Overall, I think this would take less than an hour to implement in a satisfactory way for the final project.
+
+- Overall styling and navigation/details on views - should take 1-2 days to polish things for the final project due date.
+
+- Mood ratings - I have a functioning form and database for users to rank their moods and then see a list with the times. It would be great if I could change this to clicking on a bar.
+
+- Then it would also be great if users could visualize their moods via a graph/chart.
+
+- I have mixed confidence that I can complete this before the due date of this project- as I am not sure how long it would take me to figure out these sorts of things that I've never done.
+
+-----
+
+Features I probably won't get to:
+
+- Defusion - taking a users written word and abstract it via animations. put 'I am having the thought that' in front of it first, then 'I am noticing that I am having the thought that', then having that whole statement float away. Based on RFT.
+
+- Waves - a visualization that would be relaxing/mesmerizing - also probably with the timer element.
+
+
+Sounds - to be used with breath - metronome that can be sped up and slowed down
+
+Timer - a timer, to be used initially with colors. People can only stay in an anxious state until their minds/bodies are worn out. For some people knowing that their anxiety will subside makes it easier to get through an anxious time. It would be hidden by default and appear via jQuery.
+
+Meetups - pull from meetup.com third party api to match users with meetups for people with anxiety.
