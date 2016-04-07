@@ -19,6 +19,9 @@ get 'sessions/new' => 'sessions#new'
 post 'sessions' => 'sessions#create'
 delete 'sessions' => 'sessions#destroy'
 
+get 'graph/index'
+get 'graph/data', :defaults => { :format => 'json'}
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
