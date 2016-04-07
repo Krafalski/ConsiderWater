@@ -3,3 +3,10 @@
   <%= f.text_field :rating, size:6 %>
   <%= f.submit "save" %>
 <% end %>
+
+
+<%= form_for [@user, @mood_rating] do |f| %>
+<%= f.label :rating %>
+ <%= f.hidden_field :rating, :value => 1 %>
+ <%= f.submit "the new thing" %>
+<% end %>

@@ -17,8 +17,8 @@ class MoodRatingsController < ApplicationController
 
   def create
     @mood_rating =
-    binding.pry current_user.mood_ratings.build(mood_rating_params)
-    redirect_to user_mood_ratings_path(@mood_rating)
+    current_user.mood_ratings.build(mood_rating_params)
+  #  redirect_to user_mood_ratings_path(@mood_rating)
     if @mood_rating.save
       redirect_to user_mood_ratings_path(@mood_rating)
     else
@@ -46,7 +46,7 @@ class MoodRatingsController < ApplicationController
 
 private
   def mood_rating_params
- params.require(:mood_rating).permit(:rating, :user,:user_id, :id)
+ params.require(:mood_rating).permit(:rating, :user, :user_id, :id)
   end
 
 end
