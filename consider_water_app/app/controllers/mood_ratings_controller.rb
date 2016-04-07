@@ -1,37 +1,40 @@
 class MoodRatingsController < ApplicationController
 
   def index
+    current_user
     @mood_ratings = User.find(session[:current_user_id]).mood_ratings
   end
 
   def show
+    current_user
     @mood_rating = MoodRating.find(params[:id])
   end
 
   def new
-    @mood_rating = MoodRating.new
-    @users = User.all
+    current_user
+    @mood_rating = current_user.mood_ratings.new
   end
 
   def create
-    @mood_rating = User.find(session[:current_user_id]).mood_ratings.build(mood_rating_params)
-    redirect_to mood_ratings_path
+    @mood_rating =
+    current_user.mood_ratings.build(mood_rating_params)
+
     if @mood_rating.save
-      #redirect_to mood_ratings_path(@mood_rating)
+      redirect_to user_mood_ratings_path(@mood_rating)
     else
       # some sort of error message?
     end
   end
 #don't know if I want to keep this function
+#would need to update it to be more like journal_entries
   def edit
     @mood_rating = MoodRating.find(params[:id])
   end
 
-###hiting the update instead of create,
   def update
     @mood_rating = MoodRating.find(params[:id])
     @mood_rating.update(mood_rating_params)
-    redirect_to mood_ratings_path
+    redirect_to user_mood_ratings_path
   end
 
 #don't know if I want to keep this function
@@ -43,7 +46,7 @@ class MoodRatingsController < ApplicationController
 
 private
   def mood_rating_params
- params.require(:mood_rating).permit(:rating, :user , :id)
+ params.require(:mood_rating).permit(:rating, :user, :user_id, :id)
   end
 
 end

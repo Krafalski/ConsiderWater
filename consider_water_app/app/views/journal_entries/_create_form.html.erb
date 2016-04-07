@@ -1,6 +1,8 @@
-<%= form_for @journal_entry do |f| %>
+
+
+<%= form_for [@user, @journal_entry] do |f| %>
   <%= f.label :entry_title %>
-  <%= f.text_field :entry_title, size:80, value: "default"%> 
+  <%= f.text_field :entry_title, size:80, value: "..."%>
   <%= f.label :entry_main %>
   <%= f.text_area :entry_main, cols:100, rows:40 %>
   <%= f.hidden_field :user_id, :value => :user_id %>
