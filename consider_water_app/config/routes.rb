@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :journal_entries
     resources :mood_ratings
   end
-  
+
   resources :breaths, only:[:index]
   resources :esques, only:[:index]
   resources :colors, only:[:index]
