@@ -1,12 +1,71 @@
-<%= form_for [@user, @mood_rating]  do |f| %>
-  <%= f.label :rating %>
-  <%= f.text_field :rating, size:6 %>
-  <%= f.submit "save" %>
-<% end %>
 
+<div class="bar-mood">
+  <div class="mood10">10<input class="mood" type="hidden" value="10">
+    <%= form_for [@user, @mood_rating] do |f| %>
+       <%= f.hidden_field :rating, :value => 10 %>
+       <%= f.submit "10" ,:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+  <div class="mood9">9<input class="mood" type="hidden" value="9">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 9 %>
+      <%= f.submit "9",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+  <div class="mood8">8<input class="mood" type="hidden" value="8">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 8 %>
+    <%= f.submit "8",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
 
-<%= form_for [@user, @mood_rating] do |f| %>
-<%= f.label :rating %>
- <%= f.hidden_field :rating, :value => 1 %>
- <%= f.submit "the new thing" %>
-<% end %>
+  <div class="mood7">7<input class="mood" type="hidden" value="7">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 7 %>
+      <%= f.submit "7",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+  <div class="mood6">6<input class="mood" type="hidden" value="6">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 6 %>
+      <%= f.submit "6",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+  <div class="mood5">5<input class="mood" type="hidden" value="5">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 5 %>
+      <%= f.submit "5",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+  <div class="mood4">4<input class="mood" type="hidden" value="4">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 4 %>
+      <%= f.submit "4",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+  <div class="mood3">3<input class="mood" type="hidden" value="3">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 3 %>
+      <%= f.submit "3",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+  <div class="mood2">2<input class="mood" type="hidden" value="2">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 2 %>
+      <%= f.submit "2",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+  <div class="mood1">1<input class="mood" type="hidden" value="1">
+    <%= form_for [@user, @mood_rating] do |f| %>
+      <%= f.hidden_field :rating, :value => 1 %>
+      <%= f.submit "1",:class => 'new_mood_rating' %>
+    <% end %>
+  </div>
+
+</div>

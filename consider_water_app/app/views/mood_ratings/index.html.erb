@@ -1,22 +1,5 @@
 mood index!
 <br>
 <%= link_to "Create a new Mood Entry?", new_user_mood_rating_path(@user) %>
-
-
-
 <br>
-<div class="bar-mood">
-  <div class="mood10">10<input class="mood" type="hidden" value="10"></div>
-  <div class="mood9">9<input class="mood" type="hidden" value="9"></div>
-  <div class="mood8">8<input class="mood" type="hidden" value="8"></div>
-  <div class="mood7">7<input class="mood" type="hidden" value="7"></div>
-  <div class="mood6">6<input class="mood" type="hidden" value="6"></div>
-  <div class="mood5">5<input class="mood" type="hidden" value="5"></div>
-  <div class="mood4">4<input class="mood" type="hidden" value="4"></div>
-  <div class="mood3">3<input class="mood" type="hidden" value="3"></div>
-  <div class="mood2">2<input class="mood" type="hidden" value="2"></div>
-  <div class="mood1">1<input class="mood" type="hidden" value="1"></div>
-</div>
 <%= render @mood_ratings %>
-<!-- <div class="bar-mood">
-  <#%= #button_to "", mood_ratings_path,  mood_rating: 1,  :value => 1%> -->
