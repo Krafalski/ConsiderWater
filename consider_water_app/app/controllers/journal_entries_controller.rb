@@ -2,7 +2,7 @@ class JournalEntriesController < ApplicationController
 
   def index
     current_user
-    @journal_entries = User.find(session[:current_user_id]).journal_entries
+    @journal_entries = User.find(session[:current_user_id]).journal_entries.order(created_at: :desc)
   end
 
   def show
