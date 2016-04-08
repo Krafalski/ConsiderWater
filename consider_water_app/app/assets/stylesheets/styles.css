@@ -32,21 +32,52 @@ a:hover {
   color: #777;
 }
 
+button {
+  background-color: rgba(240,240,240, .1);
+  color: rgba(150,150,150, 0.4);
+}
+
+  /*.submit input {
+    background-color: rgba(240,240,240, .1);
+    color: rgba(150,150,150, 0.4);
+    border:none;
+  }
+
+  .submit input:active {
+    background-color: rgba(240,240,240, .1);
+    color: rgba(150,150,150, 0.4);
+    border:none;
+  }*/
 /*****************************************************
                 Nav & Login
 *****************************************************/
 
 .login {
   position:absolute;
-  top: 8px;
+  top: 25px;
   right:8px;
 
 }
+.login-button {
+  background-color:inherit;
+  border: none;
+  font-family:inherit;
+  color: rgba(150,150,150, 0.4);
+  margin-left: 150px;
+  font-size:1.2em;
+}
+.login-button:hover {
+  color: #777;
+}
 
+.login-button:active{
+  outline:none;
+  background-color: rgba(250,250,250, 0.2);
+}
 .hello {
   position: absolute;
-  left: 75px;
-  top:22px;
+  left: 20px;
+  top:3px;
   margin-bottom: 10px;
   padding-bottom: 10px;
   color: rgba(150,150,150, 0.4);
@@ -57,8 +88,12 @@ a:hover {
 }
 
 .menu {
+  position:absolute;
+  left: 10px;
+  top:60px;
   padding-right: 10px;
   margin-right:10px;
+  margin:top:90px;
 }
 .menu a{
   padding-right: 10px;
@@ -66,19 +101,61 @@ a:hover {
   margin-bottom:50px;
 }
 
+.signup-button{
+  background-color:inherit;
+  border: none;
+  font-family:inherit;
+  color: rgba(150,150,150, 0.4);
+  font-size:1.2em;
+}
+/*not working? not sure why*/
+.signup-button:active{
+  outline:none;
+  background-color: rgba(250,250,250, 0.2);
+}
+.signup-botton:hover{
+  color: #777;
+}
 
+.signup a{
+  margin-left:150px;
+}
 
+.logo {
+  position:absolute;
+  top:20px;
+  left:70px;
+}
+.container div {
+  position:absolute;
+  left:20px;
+  top:100px;
+  width:500px;
 
+}
+/*****************************************************
+                Index
+*****************************************************/
 
+.footer {
+  position:absolute;
+  bottom: 10px;
+  left: 200px;
+}
 
 /*****************************************************
-                Colors
+                Colors (static page should follow the format of the others)
 *****************************************************/
 
 .colors{
   color: rbga(210,210,210,.1);
 }
 
+
+
+/*****************************************************
+        other fonts...still not sure if I want to use some other ones for different components
+*****************************************************/
 /*
 fonts
 
@@ -99,49 +176,3 @@ font-family: 'Tangerine', cursive;
 font-family: 'Arapey', serif;
 
 font-family: 'Bad Script', cursive;*/
-
-/*modified from  https://css-tricks.com/examples/ShapesOfCSS/*/
-
-#burst-8 {
-    background: #eee;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    top: 200px;
-    left: 500px;
-
-
-    text-align: center;
-    border-radius:10px;
-    -webkit-transform: rotate(20deg);
-       -moz-transform: rotate(20deg);
-        -ms-transform: rotate(20deg);
-         -o-transform: rotate(20eg);
-}
-#burst-8:before {
-    content: "";
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    background: #eee;
-    border-radius:10px;
-    -webkit-transform: rotate(135deg);
-       -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-         -o-transform: rotate(135deg);
-}
-
-#burst-8 {
-  animation-duration:12s;
-  animation-name: esqueSwing;
-  animation-iteration-count: infinite;
-}
-
-@keyframes esqueSwing {
-  0%,100% {
-    transform: rotate(0deg) translate(-300px) rotate(45deg)
-  }
-  50% {
-  transform: rotate(-60deg) translate(200px) rotate(45deg)
-  }
-}

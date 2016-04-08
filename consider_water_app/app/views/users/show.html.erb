@@ -1,7 +1,8 @@
-<div id="user-page">
-<h1>Uh oh! Are you having a rough day, <%= @user.username%>?</h1><br>
+<div id="user-page"><br>
+<h4> Hello, <%= @user.username%>,</h4>
+<p> This is your profile page. There isn't a whole lot going on here. </p>
 
-<h2>I would rather you stick around, but if you want to delete your account click below</h2><br><br>
+<h6>If you want to delete your account click below. Please note all your journal entries and mood rankings will be permanently destroyed. </h6>
 
 <%=button_to 'DELETE', @user, :method => :delete %>
 
