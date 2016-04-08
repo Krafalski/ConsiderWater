@@ -1,6 +1,10 @@
 
+//sorta works, best of the ones I've tried- when lower version than 5.0.0 turbolinks used
+//$( document ).ready(function() {
 
-$( document ).ready(function() {
+//does not work at all- needed upgrade to turbolinks 5
+ $(document).on('turbolinks:load', function() {
+
 
 var breath = $('.breath');
 var menu = $('.menu');
