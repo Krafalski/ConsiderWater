@@ -1,6 +1,10 @@
 
-
+//sorta works, best of the ones I've tried
 $( document ).ready(function() {
+
+//does not work at all
+ //$(document).on('turbolinks:load', function() {
+
 
 var breath = $('.breath');
 var menu = $('.menu');
