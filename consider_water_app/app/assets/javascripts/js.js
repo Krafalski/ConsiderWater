@@ -8,9 +8,9 @@
 
 var breath = $('.breath');
 var menu = $('.menu');
-var hello =$('.hello');
+var logo =$('.logo');
 menu.hide();
-hello.
+logo.
 click(function(){
   menu.toggle("slow", function(){
     console.log('amimation complete')
