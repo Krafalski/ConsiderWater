@@ -35,3 +35,5 @@
 - add a dependent destroy to users has many...
 
 - updated journal entry out of chronological order?
+
+- dates in _mood_rating.html.erb & _journal_entry.html.erb need formatting
