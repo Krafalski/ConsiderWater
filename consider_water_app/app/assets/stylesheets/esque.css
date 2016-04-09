@@ -1,5 +1,10 @@
 /*some are in here twice, but when I remove or modify one the shape changes to an arrow*/
 
+.block div{
+  display:block;
+  padding: 20px 100px 20px 100px;
+  min-width: 300px
+}
 
 #burst-8 {
     background: red;
@@ -57,7 +62,7 @@
 }
 
 #burst-8 {
-  animation-duration:12s;
+  animation-duration:10s;
   animation-name: feelingSwing;
   animation-iteration-count: infinite;
 }
