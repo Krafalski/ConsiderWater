@@ -16,9 +16,9 @@
       <%= link_to "Journal", user_journal_entries_path(session[:current_user_id]) %>
       <%= link_to "Mood", user_mood_ratings_path(session[:current_user_id]) %>
     <% end %>
+    <%= link_to "Colors", colors_path %>
     <%= link_to "Breath", breaths_path %>
     <%= link_to "Feeling", esques_path %>
-    <%= link_to "Colors", colors_path %>
     <%= link_to "About", abouts_path %>
   </div>
   <div class="login">
