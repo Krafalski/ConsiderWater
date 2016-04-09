@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :breaths, only:[:index]
   resources :esques, only:[:index]
   resources :colors, only:[:index]
+  resources :abouts, only:[:index]
 
 
 get 'sessions/new' => 'sessions#new'

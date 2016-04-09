@@ -135,7 +135,7 @@ button {
 }
 
 .container div{
-  position:absolute;
+  /*position:absolute;*/
   left:20px;
   top:80px;
   width:500px;
