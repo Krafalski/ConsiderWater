@@ -9,8 +9,8 @@
 <link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Architects+Daughter|Josefin+Slab:400,100,400italic,100italic,600italic|Comfortaa:400,300,700|Philosopher:400,400italic|Old+Standard+TT:400,400italic|Tangerine|Arapey|Bad+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h2><%= link_to "Consider Water", root_path,:class => 'logo'  %> </h2>
-  <div class="hello">   ≈  </div>
+  <h2 class="logo" > Consider Water  </h2>
+  <div class="hello"><%= link_to  " ≈ ", root_path, :class => 'logo' %> </div>
   <div class="menu">
     <% if session[:current_user_id] %>
       <%= link_to "Journal", user_journal_entries_path(session[:current_user_id]) %>
@@ -19,6 +19,7 @@
     <%= link_to "Breath", breaths_path %>
     <%= link_to "Feeling", esques_path %>
     <%= link_to "Colors", colors_path %>
+    <%= link_to "About", abouts_path %>
   </div>
   <div class="login">
     <% if session[:current_user_id] %>

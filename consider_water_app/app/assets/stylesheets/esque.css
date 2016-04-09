@@ -33,7 +33,7 @@
     height: 80px;
     position: relative;
     top: 200px;
-    left: 500px;
+    left: 400px;
 
 
     text-align: center;
@@ -58,15 +58,19 @@
 
 #burst-8 {
   animation-duration:12s;
-  animation-name: esqueSwing;
+  animation-name: feelingSwing;
   animation-iteration-count: infinite;
 }
 
-@keyframes esqueSwing {
+@keyframes feelingSwing {
   0%,100% {
-    transform: rotate(0deg) translate(-300px) rotate(45deg)
+    transform: rotate(30deg) translate(-300px) rotate(45deg)
   }
   50% {
-  transform: rotate(-60deg) translate(200px) rotate(45deg)
+  transform: rotate(-30deg) translate(300px) rotate(45deg)
   }
+}
+
+.feelingprompt {
+
 }

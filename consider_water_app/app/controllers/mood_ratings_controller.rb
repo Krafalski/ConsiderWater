@@ -2,7 +2,7 @@ class MoodRatingsController < ApplicationController
 
   def index
     current_user
-    @mood_ratings = User.find(session[:current_user_id]).mood_ratings
+    @mood_ratings = User.find(session[:current_user_id]).mood_ratings.order(created_at: :desc)
   end
 
   def show
