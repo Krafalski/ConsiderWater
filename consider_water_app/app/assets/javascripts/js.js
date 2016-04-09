@@ -29,20 +29,18 @@ click(function(){
  var mood10 = $('.mood10');
 
 
-mood1.on('click', function(event){console.log ('1')});
-mood2.on('click', function(event){console.log ('2')});
-mood3.on('click', function(event){console.log ('3')});
-mood4.on('click', function(event){console.log ('4')});
-mood5.on('click', function(event){console.log ('5')});
-mood6.on('click', function(event){console.log ('6')});
-mood7.on('click', function(event){console.log ('7')});
-mood8.on('click', function(event){console.log ('8')});
-mood9.on('click', function(event){console.log ('9')});
-mood10.on('click', function(event){console.log ('10')});
 
+var breathSpeed1 = $('.breath-speed-1');
+var breathSpeed2 = $('.breath-speed-2');
+var breathSpeed3 = $('.breath-speed-3');
+var breathSpeed4 = $('.breath-speed-4');
+var breathSpeed5 = $('.breath-speed-5');
 
-
-
+breathSpeed1.on('click', function(event){console.log ('1')});
+breathSpeed2.on('click', function(event){console.log ('2')});
+breathSpeed3.on('click', function(event){console.log ('3')});
+breathSpeed4.on('click', function(event){console.log ('4')});
+breathSpeed5.on('click', function(event){console.log ('5')});
 
 
 
