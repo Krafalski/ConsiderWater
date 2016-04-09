@@ -1,3 +1,7 @@
+/*****************************************************
+                 Shape
+*****************************************************/
+
 #breath {
 
   position: absolute;
@@ -17,22 +21,13 @@
   /*box-shadow: ;*/
 }
 
-#breath {
-  animation-duration:12s;
-  animation-name:circleExpand;
-  animation-iteration-count: infinite;
-}
 
-@keyframes circleExpand {
-  0%,100% {
-    transform: scale(.7,.7)
-  }
-  50% {
-    transform: scale(1,1)
-  }
-}
+/*****************************************************
+                Speed buttons
+*****************************************************/
 
-.breath-speed-1{
+
+.breath-speed-1-control{
   position: absolute;
   left: 200px;
   bottom:100px;
@@ -49,7 +44,7 @@
              3px -3px 8px rgba(119, 119, 119, .3);
 }
 
-.breath-speed-2{
+.breath-speed-2-control{
   position: absolute;
   left: 220px;
   bottom:98px;
@@ -67,7 +62,7 @@
 }
 
 
-.breath-speed-3{
+.breath-speed-3-control{
   position: absolute;
   left: 240px;
   bottom:97px;
@@ -84,7 +79,7 @@
              3px -3px 8px rgba(119, 119, 119, .3);
 }
 
-.breath-speed-4{
+.breath-speed-4-control{
   position: absolute;
   left: 262px;
   bottom:95px;
@@ -95,13 +90,13 @@
   min-height:16px;
   max-width:16px;
   max-height:16px;
-  box-shadow: 3px 3px 8px rgba(119, 119, 119, .3),
-           -3px -3px 8px  rgba(119, 119, 119, .3),
-            -3px 3px 8px rgba(119, 119, 119, .3),
-             3px -3px 8px rgba(119, 119, 119, .3);
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, .3),
+           -3px -3px 10px  rgba(119, 119, 119, .3),
+            -3px 3px 10px rgba(119, 119, 119, .3),
+             3px -3px 10px rgba(119, 119, 119, .3);
 }
 
-.breath-speed-5{
+.breath-speed-5-control{
   position: absolute;
   left: 287px;
   bottom:93px;
@@ -116,4 +111,86 @@
            -3px -3px 8px  rgba(119, 119, 119, .3),
             -3px 3px 8px rgba(119, 119, 119, .3),
              3px -3px 8px rgba(119, 119, 119, .3);
+}
+
+
+/*****************************************************
+                 Animations
+*****************************************************/
+
+
+.breath-speed-1 {
+  animation-duration:6s;
+  animation-name:circleExpand1;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand1 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+.breath-speed-2 {
+  animation-duration:8s;
+  animation-name:circleExpand2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand2 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+.breath-speed-3 {
+  animation-duration:12s;
+  animation-name:circleExpand3;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand3 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+.breath-speed-4 {
+  animation-duration:16s;
+  animation-name:circleExpand4;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand4 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+
+.breath-speed-5 {
+  animation-duration:20s;
+  animation-name:circleExpand5;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand5 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
 }

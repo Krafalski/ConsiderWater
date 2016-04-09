@@ -30,17 +30,44 @@ click(function(){
 
 
 
-var breathSpeed1 = $('.breath-speed-1');
-var breathSpeed2 = $('.breath-speed-2');
-var breathSpeed3 = $('.breath-speed-3');
-var breathSpeed4 = $('.breath-speed-4');
-var breathSpeed5 = $('.breath-speed-5');
+var breathSpeed1 = $('.breath-speed-1-control');
+var breathSpeed2 = $('.breath-speed-2-control');
+var breathSpeed3 = $('.breath-speed-3-control');
+var breathSpeed4 = $('.breath-speed-4-control');
+var breathSpeed5 = $('.breath-speed-5-control');
 
-breathSpeed1.on('click', function(event){console.log ('1')});
-breathSpeed2.on('click', function(event){console.log ('2')});
-breathSpeed3.on('click', function(event){console.log ('3')});
-breathSpeed4.on('click', function(event){console.log ('4')});
-breathSpeed5.on('click', function(event){console.log ('5')});
+var breathdiv    = $('#breath');
+
+breathdiv.on('click', function (event){
+  console.log ('Imma beeen clicked wooo!')
+})
+
+breathSpeed1.on('click', function(event){
+  breathdiv.removeClass("breath-speed-1 breath-speed-2 breath-speed-3 breath-speed-4 breath-speed-5");
+  breathdiv.addClass("breath-speed-1");
+  console.log('successs? 1')
+
+});
+breathSpeed2.on('click', function(event){
+  breathdiv.removeClass("breath-speed-1 breath-speed-2 breath-speed-3 breath-speed-4 breath-speed-5");
+  breathdiv.addClass("breath-speed-2");
+  console.log('successs? 2')
+});
+breathSpeed3.on('click', function(event){
+  breathdiv.removeClass("breath-speed-1 breath-speed-2 breath-speed-3 breath-speed-4 breath-speed-5");
+  breathdiv.addClass("breath-speed-3");
+  console.log('successs? 3')
+});
+breathSpeed4.on('click', function(event){
+  breathdiv.removeClass("breath-speed-1 breath-speed-2 breath-speed-3 breath-speed-4 breath-speed-5");
+  breathdiv.addClass("breath-speed-4");
+  console.log('successs? 4')
+});
+breathSpeed5.on('click', function(event){
+  breathdiv.removeClass("breath-speed-1 breath-speed-2 breath-speed-3 breath-speed-4 breath-speed-5");
+  breathdiv.addClass("breath-speed-5");
+  console.log('successs? 5')
+});
 
 
 
