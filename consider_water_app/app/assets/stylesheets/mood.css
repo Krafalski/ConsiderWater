@@ -13,7 +13,7 @@ div[class^="mood"]{
 }
 
 .bar-mood {
-  width:40px;
+ max-width:40px;
   height:440px;
   display:inline-block;
   background-image:
@@ -24,6 +24,7 @@ div[class^="mood"]{
 
 input[class^="mood"]{
   display:inline-block;
+  max-width:40px;
 }
 
 
@@ -32,13 +33,13 @@ input[class^="mood"]{
 }
 
 
-
 .new_mood_rating{
   background-color:inherit;
   color: inherit;
   border: none;
   outline: none;
   width: inherit;
+  max-width:40px;
   height: inherit;
   margin-top: -10px;
 

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
- # before_action :authenticate, except: [:new, :create]
+ #before_action :authenticate, except: [:new, :create]
   def new
     @user = User.new
   end
@@ -11,7 +11,8 @@ class UsersController < ApplicationController
       session[:current_user_id] = @user.id
       redirect_to root_path
     else
-      redirect_to new_user_path
+      render html: 'Invalid/username/password. Please re-enter your information.'
+      #redirect_to new_user_path
     end
   end
 
