@@ -2,12 +2,10 @@ class MoodRatingsController < ApplicationController
 
   def index
     current_user
-
     @mood_ratings = User.find(session[:current_user_id]).mood_ratings.order(created_at: :desc)
     # this renders json instead of the expected view...hrmmm
     # on the path to d3 graphing
     #render json: @mood_ratings
-
   end
 
   def show

@@ -7,11 +7,18 @@ $.ajax({
            dataType: 'json',
            success: function (data) {
                draw(data);
+               data.forEach(consoleMe);
            },
            error: function (result) {
                error();
            }
        });
+
+//console.log(data);
+
+function consoleMe (element){
+  console.log (element.rating + " " + element.created_at);
+}
 
 function draw(data) {
     var color = d3.scale.category20b();
