@@ -1,0 +1,81 @@
+/*some are in here twice, but when I remove or modify one the shape changes to an arrow*/
+
+.block div{
+  display:block;
+  padding: 20px 100px 20px 100px;
+  min-width: 300px
+}
+
+#burst-8 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20eg);
+}
+#burst-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+/* shape modified from  https://css-tricks.com/examples/ShapesOfCSS/*/
+
+#burst-8 {
+    background: #eee;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 200px;
+    left: 400px;
+
+
+    text-align: center;
+    border-radius:10px;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20eg);
+}
+#burst-8:before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: #eee;
+    border-radius:10px;
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+
+#burst-8 {
+  animation-duration:10s;
+  animation-name: feelingSwing;
+  animation-iteration-count: infinite;
+}
+
+@keyframes feelingSwing {
+  0%,100% {
+    transform: rotate(30deg) translate(-300px) rotate(45deg)
+  }
+  50% {
+  transform: rotate(-30deg) translate(300px) rotate(45deg)
+  }
+}
+
+.feelingprompt {
+
+}

@@ -1,0 +1,2 @@
+class EsquesController < ApplicationController
+end

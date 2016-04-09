@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+console.log ('00009')
+var breath = $('.breath')
+
+breath.on('click', function(event){console.log('oh my god I have been clicked')})

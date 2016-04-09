@@ -1,0 +1,7 @@
+<div class="entries-all">
+  <h2> <%= journal_entry.entry_title %> </h2>
+  <p> <%= journal_entry.created_at.to_s(:short) %> </p>
+  <p> <%= journal_entry.entry_main %> </p>
+  <%= link_to "View", user_journal_entry_path(@user, journal_entry) %>
+  <%= link_to "Edit", edit_user_journal_entry_path(@user, journal_entry) %>
+</div>

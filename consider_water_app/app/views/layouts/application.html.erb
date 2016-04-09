@@ -5,16 +5,28 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+<link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Architects+Daughter|Josefin+Slab:400,100,400italic,100italic,600italic|Comfortaa:400,300,700|Philosopher:400,400italic|Old+Standard+TT:400,400italic|Tangerine|Arapey|Bad+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h2> Consider Water </h2>
+  <h2 class="logo" > Consider Water  </h2>
+  <div class="hello"><%= link_to  " ≈ ", root_path, :class => 'logo' %> </div>
+  <div class="menu">
+    <% if session[:current_user_id] %>
+      <%= link_to "Journal", user_journal_entries_path(session[:current_user_id]) %>
+      <%= link_to "Mood", user_mood_ratings_path(session[:current_user_id]) %>
+    <% end %>
+    <%= link_to "Colors", colors_path %>
+    <%= link_to "Breath", breaths_path %>
+    <%= link_to "Feeling", esques_path %>
+    <%= link_to "About", abouts_path %>
+  </div>
   <div class="login">
     <% if session[:current_user_id] %>
-    <h4> Hello there! </h4>
-    <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id]) %> ||
+    <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id]) %> ✧
     <%= link_to "Logout", sessions_path, method: :delete %>
     <% else %>
-    <p> Already a memember? Do sign in, please. </p>
+    <p>  </p>
     <%= form_tag(sessions_path) do%>
     <%= label_tag :username %>
     <%= text_field_tag :username %>
@@ -22,14 +34,16 @@
     <%= label_tag :password %>
     <%= password_field_tag :password %>
     <br>
-    <%= submit_tag "Login" %>
+    <%= submit_tag "Login", :class => 'login-button'  %>
+    <div class="signup">
+      <%= link_to "Sign up", new_user_url, method: :get %>
+    </div>
     <% end %>
     <% end %>
   </div>
-  <div class="signup">
-    <%= link_to "Sign up", new_user_url, method: :get %>
-  </div>
-<%= yield %>
+<div class="container">
 
+<%= yield %>
+</div>
 </body>
 </html>
