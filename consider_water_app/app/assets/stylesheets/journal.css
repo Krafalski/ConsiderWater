@@ -5,22 +5,33 @@
   background-color:white;
   border-radius:10%;
   padding:10px;
-  margin: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: 1px 1px 3px grey;
   display:block;
   position:relative;
+  text-align:left;
+
 }
 
 .entries-all div{
   display:block;
   position:relative;
+  text-align:left;
+  /*margin-bottom:13px;*/
 }
 .entries-all a {
-  margin-left:30px;
+  margin:inherit;
+  margin-right:153px;
+
 }
 
 .entries-all div {
   padding:5px;
+
+
 }
 
 .entries-all h2 {
@@ -31,4 +42,41 @@
   padding:10px;
   margin-left:10px;
   margin-right:10px;
+  text-align:left;
+}
+
+textarea {
+  display:block;
+  font-family:inherit;
+  font-size: 1.2em;
+  color: #999;
+  outline-color: white;
+  border-color:#aaa;
+}
+/*input {
+  display:block;
+}*/
+#journal_entry_entry_title {
+  display:block;
+  font-family:inherit;
+  font-size: 1.1em;
+  color: #999;
+  margin:auto;
+  border-radius: 3px;
+  border-top: none;
+  border-left:none;
+  background-color: rgba(253,253,253, .95)
+}
+#journal_entry_entry_main:focus{
+
+}
+#journal_entry_entry_main{
+  border-radius:10px;
+  border:none;
+  background-color: rgba(253,253,253, .95)
+}
+
+#journal_entry_entry_title:focus {
+  border:none;
+  outline:none;
 }

@@ -3,8 +3,8 @@
 *****************************************************/
 
 #breath {
-
-  position: absolute;
+  margin:auto;
+  margin-top:80px;
   left: 200px;
   top:200px;
   display: inline-block;
@@ -21,6 +21,11 @@
   /*box-shadow: ;*/
 }
 
+#breath-speed-bar{
+  margin:auto;
+  margin-top:50px;
+  min-height:50px;
+}
 
 /*****************************************************
                 Speed buttons
@@ -28,9 +33,7 @@
 
 
 .breath-speed-1-control{
-  position: absolute;
-  left: 200px;
-  bottom:100px;
+  margin:auto;
   display: inline-block;
   background-color: rgba(119, 119, 119, .3);
   border-radius:100%;
@@ -38,16 +41,10 @@
   min-height:10px;
   max-width:10px;
   max-height:10px;
-  box-shadow: 3px 3px 4px rgba(119, 119, 119, .3),
-           -3px -3px 4px  rgba(119, 119, 119, .3),
-            -3px 3px 4px rgba(119, 119, 119, .3),
-             3px -3px 4px rgba(119, 119, 119, .3);
 }
 
 .breath-speed-2-control{
-  position: absolute;
-  left: 220px;
-  bottom:98px;
+  margin:auto;
   display: inline-block;
   background-color: rgba(119, 119, 119, .3);
   border-radius:100%;
@@ -55,17 +52,11 @@
   min-height:12px;
   max-width:12px;
   max-height:12px;
-  box-shadow: 3px 3px 4px rgba(119, 119, 119, .3),
-           -3px -3px 4px  rgba(119, 119, 119, .3),
-            -3px 3px 4px rgba(119, 119, 119, .3),
-             3px -3px 4px rgba(119, 119, 119, .3);
 }
 
 
 .breath-speed-3-control{
-  position: absolute;
-  left: 240px;
-  bottom:97px;
+  margin:auto;
   display: inline-block;
   background-color: rgba(119, 119, 119, .3);
   border-radius:100%;
@@ -73,16 +64,10 @@
   min-height:14px;
   max-width:14px;
   max-height:14px;
-  box-shadow: 3px 3px 4px rgba(119, 119, 119, .3),
-           -3px -3px 4px  rgba(119, 119, 119, .3),
-            -3px 3px 4px rgba(119, 119, 119, .3),
-             3px -3px 4px rgba(119, 119, 119, .3);
 }
 
 .breath-speed-4-control{
-  position: absolute;
-  left: 262px;
-  bottom:95px;
+  margin:auto;
   display: inline-block;
   background-color: rgba(119, 119, 119, .3);
   border-radius:100%;
@@ -90,16 +75,10 @@
   min-height:16px;
   max-width:16px;
   max-height:16px;
-  box-shadow: 3px 3px 4px rgba(119, 119, 119, .3),
-           -3px -3px 4px  rgba(119, 119, 119, .3),
-            -3px 3px 4px rgba(119, 119, 119, .3),
-             3px -3px 4px rgba(119, 119, 119, .3);
 }
 
 .breath-speed-5-control{
-  position: absolute;
-  left: 287px;
-  bottom:93px;
+  margin:auto;
   display: inline-block;
   background-color: rgba(119, 119, 119, .3);
   border-radius:100%;
@@ -107,10 +86,6 @@
   min-height:18px;
   max-width:18px;
   max-height:18px;
-  box-shadow: 3px 3px 4px rgba(119, 119, 119, .3),
-           -3px -3px 4px  rgba(119, 119, 119, .3),
-            -3px 3px 4px rgba(119, 119, 119, .3),
-             3px -3px 4px rgba(119, 119, 119, .3);
 }
 
 
