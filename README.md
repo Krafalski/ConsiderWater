@@ -29,7 +29,7 @@
  The goal is to create a journal, a mood ranking system for a logged in user, and the ten breaths component for the final project. Additional components will be worked on an implemented as time permits.
 
 #### URL
- tbd
+https://arcane-taiga-14002.herokuapp.com
 
 ###### Goal (from original ideas notes)
 To create an interactive web site to provide simple activities for anxious people to do.
