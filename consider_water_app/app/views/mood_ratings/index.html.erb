@@ -1,1 +1,11 @@
-mood index!
+
+<br>
+<%= link_to "Enter your current mood", new_user_mood_rating_path(@user) %>
+<br>
+
+<br>
+<table class="ratings-all">
+    <tr>
+<%= render @mood_ratings %>
+</tr>
+</table>

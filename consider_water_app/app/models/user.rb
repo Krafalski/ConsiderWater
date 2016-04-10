@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
- validates :username, presence: true, uniqueness:true
- #validates :email, presence:true, uniqueness:true
- has_secure_password
+
+  has_many :journal_entries, dependent: :destroy
+  has_many :mood_ratings, dependent: :destroy
+  validates :username, presence: true, uniqueness:true
+  has_secure_password
 end

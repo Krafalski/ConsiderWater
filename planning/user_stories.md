@@ -35,9 +35,10 @@
 - show/hide breath count so that I know how many breaths I have taken, still have left
 
 #### Bonus components/ideas
-
+###### Meetups
 ###### Timer
 ###### Sounds
 ###### Colors
 ###### EMDR-esque
 ###### Defusion
+##### Links and references

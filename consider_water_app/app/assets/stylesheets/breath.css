@@ -1,0 +1,173 @@
+/*****************************************************
+                 Shape
+*****************************************************/
+
+#breath {
+  margin:auto;
+  margin-top:80px;
+  left: 200px;
+  top:200px;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:200px;
+  min-height:200px;
+  max-width:200px;
+  max-height:200px;
+  box-shadow: 3px 3px 8px rgba(119, 119, 119, .3),
+           -3px -3px 8px  rgba(119, 119, 119, .3),
+            -3px 3px 8px rgba(119, 119, 119, .3),
+             3px -3px 8px rgba(119, 119, 119, .3);
+  /*box-shadow: ;*/
+}
+
+#breath-speed-bar{
+  margin:auto;
+  margin-top:50px;
+  min-height:50px;
+}
+
+/*****************************************************
+                Speed buttons
+*****************************************************/
+
+
+.breath-speed-1-control{
+  margin:auto;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:10px;
+  min-height:10px;
+  max-width:10px;
+  max-height:10px;
+}
+
+.breath-speed-2-control{
+  margin:auto;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:12px;
+  min-height:12px;
+  max-width:12px;
+  max-height:12px;
+}
+
+
+.breath-speed-3-control{
+  margin:auto;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:14px;
+  min-height:14px;
+  max-width:14px;
+  max-height:14px;
+}
+
+.breath-speed-4-control{
+  margin:auto;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:16px;
+  min-height:16px;
+  max-width:16px;
+  max-height:16px;
+}
+
+.breath-speed-5-control{
+  margin:auto;
+  display: inline-block;
+  background-color: rgba(119, 119, 119, .3);
+  border-radius:100%;
+  min-width:18px;
+  min-height:18px;
+  max-width:18px;
+  max-height:18px;
+}
+
+
+/*****************************************************
+                 Animations
+
+SUPER BIG THANKS TO FEUDI FOR THE LESSON IN CSS ANIMATIONS!
+*****************************************************/
+
+
+.breath-speed-1 {
+  animation-duration:6s;
+  animation-name:circleExpand1;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand1 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+.breath-speed-2 {
+  animation-duration:8s;
+  animation-name:circleExpand2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand2 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+.breath-speed-3 {
+  animation-duration:12s;
+  animation-name:circleExpand3;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand3 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+.breath-speed-4 {
+  animation-duration:16s;
+  animation-name:circleExpand4;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand4 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
+
+
+.breath-speed-5 {
+  animation-duration:20s;
+  animation-name:circleExpand5;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circleExpand5 {
+  0%,100% {
+    transform: scale(.7,.7)
+  }
+  50% {
+    transform: scale(1,1)
+  }
+}
