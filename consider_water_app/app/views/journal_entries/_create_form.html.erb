@@ -4,7 +4,7 @@
   <%= f.label :entry_title %>
   <%= f.text_field :entry_title, size:80%>
   <%= f.label :entry_main %>
-  <%= f.text_area :entry_main, cols:100, rows:40 %>
+  <%= f.text_area :entry_main, cols:100, rows:20 %>
   <%= f.hidden_field :user_id, :value => :user_id %>
-  <%= f.submit "save" %>
+  <%= f.submit "save", :class => 'signup-button' %>
 <% end %>

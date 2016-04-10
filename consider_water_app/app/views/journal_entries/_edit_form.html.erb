@@ -1,9 +1,9 @@
 
 
 <%= form_for [@user, @journal_entry], url: user_journal_entry_path do |f| %>
-  <%= f.label :entry_title %>
-  <%= f.text_field :entry_title, size:80, value: "default"%>
-  <%= f.label :entry_main %>
-  <%= f.text_area :entry_main, cols:100, rows:40 %>
-  <%= f.submit "save" %>
+  <%= f.label :entry_title %><br>
+  <%= f.text_field :entry_title, size:80%><br>
+  <%= f.label :entry_main %><br>
+  <%= f.text_area :entry_main, cols:100, rows:20 %>
+  <%= f.submit "save", :class => 'signup-button' %>
 <% end %>

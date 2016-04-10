@@ -19,8 +19,16 @@ body {
   font-family: 'Philosopher', sans-serif;
 }
 
-.container {
+#container {
   max-width:900px;
+  text-align: center;
+  margin: 100px auto 10px auto;
+
+
+}
+
+#container div {
+    maring-bottom:10px;
 }
 
 a {
@@ -105,12 +113,13 @@ button {
   background-color:inherit;
   border: none;
   font-family:inherit;
-  color: rgba(150,150,150, 0.4);
+  color: rgba(150,150,150, 0.8);
   font-size:1.2em;
 }
 /*not working? not sure why*/
 .signup-button:active{
   outline:none;
+  border:none;
   background-color: rgba(250,250,250, 0.2);
 }
 .signup-botton:hover{
@@ -131,7 +140,7 @@ button {
   left:20px;
   top:80px;
   width:500px;
-
+  text-align: center;
 }
 
 .container div{
@@ -139,6 +148,10 @@ button {
   left:20px;
   top:80px;
   width:500px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: inherit;
 }
 
 /*****************************************************
@@ -148,7 +161,8 @@ button {
 .footer {
   position:absolute;
   bottom: 10px;
-  left: 200px;
+  left: 150px;
+  text-align: center;
 }
 
 /*****************************************************
