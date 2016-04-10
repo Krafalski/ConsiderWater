@@ -24,7 +24,8 @@
 }
 .entries-all a {
   margin:inherit;
-  margin-right:3px;
+  margin-right:153px;
+
 }
 
 .entries-all div {
@@ -58,7 +59,7 @@ textarea {
 #journal_entry_entry_title {
   display:block;
   font-family:inherit;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #999;
   margin:auto;
   border-radius: 3px;

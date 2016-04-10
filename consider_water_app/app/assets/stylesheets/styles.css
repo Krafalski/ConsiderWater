@@ -2,20 +2,9 @@
                  GENERAL
 *****************************************************/
 
-.testbutton{
-  background-color:inherit;
-  border: none;
-  outline: none;
-}
-.testbutton:active{
-  outline:none;
-  background-color: orange;
-}
-
 body {
   background: url(crossword.png);
   color: rgba(8,8,8, .5);
-  font-family: 'Comfortaa', cursive;
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -23,8 +12,6 @@ body {
   max-width:900px;
   text-align: center;
   margin: 100px auto 10px auto;
-
-
 }
 
 #container div {
@@ -45,17 +32,6 @@ button {
   color: rgba(150,150,150, 0.4);
 }
 
-  /*.submit input {
-    background-color: rgba(240,240,240, .1);
-    color: rgba(150,150,150, 0.4);
-    border:none;
-  }
-
-  .submit input:active {
-    background-color: rgba(240,240,240, .1);
-    color: rgba(150,150,150, 0.4);
-    border:none;
-  }*/
 /*****************************************************
                 Nav & Login
 *****************************************************/
@@ -64,8 +40,8 @@ button {
   position:absolute;
   top: 25px;
   right:8px;
-
 }
+
 .login-button {
   background-color:inherit;
   border: none;
@@ -74,6 +50,7 @@ button {
   margin-left: 150px;
   font-size:1.2em;
 }
+
 .login-button:hover {
   color: #777;
 }
@@ -82,6 +59,7 @@ button {
   outline:none;
   background-color: rgba(250,250,250, 0.2);
 }
+
 .logo {
   position: absolute;
   left: 50px;
@@ -91,6 +69,7 @@ button {
   color: rgba(100,100,100, 0.4);
   font-size: 1.7em;
 }
+
 .logo:hover{
   color: rgba(200,200,200, 0.4);
 }
@@ -103,6 +82,7 @@ button {
   margin-right:10px;
   margin:top:90px;
 }
+
 .menu a{
   padding-right: 10px;
   margin-right:10px;
@@ -116,12 +96,14 @@ button {
   color: rgba(150,150,150, 0.8);
   font-size:1.2em;
 }
+
 /*not working? not sure why*/
 .signup-button:active{
   outline:none;
   border:none;
   background-color: rgba(250,250,250, 0.2);
 }
+
 .signup-botton:hover{
   color: #777;
 }
@@ -135,6 +117,7 @@ button {
   top:20px;
   left:-25px;
 }
+
 .container  {
   position:absolute;
   left:20px;
@@ -161,8 +144,8 @@ button {
 .footer {
   position:absolute;
   bottom: 10px;
-  left: 150px;
-  text-align: center;
+  left:45%;
+  margin-left:-10%;
 }
 
 /*****************************************************
@@ -171,11 +154,20 @@ button {
 
 .colors{
   color: rgba(200,200,200, 0.7);
-  margin-left: 200px;
+  margin-top:100px;
+  padding-top:100px;
 }
 
 .colors p {
  margin-bottom: 5px;
+}
+/*****************************************************
+                About (static page should follow the format of the others)
+*****************************************************/
+#about {
+  padding:10px;
+  margin:10px;
+  text-align:justify;
 }
 
 /*****************************************************
@@ -201,3 +193,13 @@ font-family: 'Tangerine', cursive;
 font-family: 'Arapey', serif;
 
 font-family: 'Bad Script', cursive;*/
+
+/*.testbutton{
+  background-color:inherit;
+  border: none;
+  outline: none;
+}
+.testbutton:active{
+  outline:none;
+  background-color: orange;
+}*/
